@@ -28,7 +28,7 @@ def post_new(request):
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
-        stuff_for_frontend = {'form': form, 'post': post}
+        stuff_for_frontend = {'form': form}
     return render(request, 'project/post_edit.html', stuff_for_frontend)
 
 @login_required
@@ -36,7 +36,7 @@ def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.method == 'POST':
 
-        # updating on existing form
+        # updating an existing form
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
             post = form.save(commit=False)

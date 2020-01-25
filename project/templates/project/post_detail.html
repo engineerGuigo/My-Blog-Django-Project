@@ -1,5 +1,4 @@
 {% extends 'project/base.html' %}
-
 {% block title %}{{ post.title }}{% endblock %} 
 
 {% block content %}
@@ -10,7 +9,7 @@
                 {{ post.published_date }}
             </div>
 
-            {% else %}
+        {% else %}
             <a href="{% url 'post_publish' pk=post.pk %}" class="btn btn-primary">Publish</a>
 
         {% endif %}
