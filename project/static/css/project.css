@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #ff9400;
+    background-color: #13110f;
     margin-top: 0;
     padding: 20px 20px 20px 20px;
 }
@@ -44,4 +44,9 @@ h1, h2, h3, h4 {
     float: right;
     font-size: 26pt;
     margin-right: 20px;
+}
+
+.comment {
+    color: black;
+    margin: 20px 0px 20px 20px;
 }
