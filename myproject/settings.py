@@ -9,7 +9,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
-ALLOWED_HOSTS = ['https://myprofessionalblog.herokuapp.com/', '*']
+ALLOWED_HOSTS = ['https://myprofblog.herokuapp.com', '*']
 
 LOGIN_REDIRECT_URL = 'post_list'
 
