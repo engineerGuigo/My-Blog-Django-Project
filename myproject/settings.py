@@ -27,7 +27,7 @@ DEBUG = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
-ALLOWED_HOSTS = ['guigoblog.herokuapp.com']
+ALLOWED_HOSTS = ['guigoblogpy.herokuapp.com']
 
 LOGIN_REDIRECT_URL = 'post_list'
 
